@@ -17,3 +17,21 @@ Write unit test all your validation functions (**not** the streams themselves; t
 2. Use `#merge(Kefir.constant(initial))` to give you stream an initial value.
 3. Use `#log` to test your streams.
 </details>
+
+## Exercise 2
+
+Building on the registration form you created in Exercise 1, add a submit button and create a stream that emits an event on every click (`submit$`). Then create a new stream that:
+
+1. Emits a new value every button click...
+2. ... only when the form is valid...
+3. ... and only once.
+
+Once the stream emits a new value, disable all the inputs.
+
+### Hints
+
+<details>
+1. Use `#sampledBy` to take a value from one stream when another emits a value.
+2. Use `#filteredBy` to remove values from one stream based on the latest value from another stream.
+3. Use `#take` to limit the number of values emitted from a stream.
+</details>

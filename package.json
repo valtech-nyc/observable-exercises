@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start:ex1": "static ex1/",
-    "test:ex1": "mocha -r esm ex1/*.spec.js"
+    "test:ex1": "mocha -r esm ex1/*.spec.js",
+    "start:ex2": "static ex2/",
+    "test:ex2": "mocha -r esm ex2/*.spec.js",
+    "start:ex3": "static ex3/",
+    "test:ex3": "mocha -r esm ex3/*.spec.js"
   },
   "author": "James DiGioia <jamesorodig@gmail.com> (http://jamesdigioia.com)",
   "license": "MIT",

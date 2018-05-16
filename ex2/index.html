@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Observable Exercise</title>
+    <link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <style>
+        form {
+            width: 500px;
+            padding: 50px 0;
+            border: 10px solid #00FFFF;
+            border-radius: 5px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .error,
+        .success {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="text" placeholder="Email Address">
+                <div id="email-error" class="error">Invalid Email</div>
+            </div>
+
+            <div class="pure-control-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+                <div id="password-error" class="error">Invalid password</div>
+            </div>
+
+            <div id="success-message" class="success">Form is valid!</div>
+        </fieldset>
+    </form>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
